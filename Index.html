@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICICLA!!! - Manuale di Gioco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        .eco-card {
+            background: rgba(30, 41, 59, 0.7);
+            border-left: 4px solid #22c55e;
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #4ade80, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .step-number {
+            background: #22c55e;
+            color: #0f172a;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-bold tracking-tighter gradient-text">RICICLA!!!</h1>
+            <p class="text-xl text-slate-400 mt-2 italic">Ripara il passato, costruisci il futuro.</p>
+            <div class="mt-6 inline-block bg-green-900/30 border border-green-500/50 rounded-full px-4 py-1 text-sm text-green-400 uppercase tracking-widest">
+                Documento Ufficiale v1.1
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <section class="mb-12 eco-card p-6 rounded-r-xl">
+            <h2 class="text-2xl font-bold mb-4 text-green-400 flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                INTRODUZIONE
+            </h2>
+            <p class="text-slate-300 leading-relaxed">
+                In un futuro distopico, la Terra è soffocata dai rifiuti. Il <strong>Nuovo Governo Mondiale</strong> ha precettato le corporazioni responsabili del disastro: non dovranno pagare sanzioni, ma riparare i danni. Guida la tua azienda verso una redenzione ecologica... o verso il dominio del nuovo mondo verde.
+            </p>
+        </section>
+
+        <!-- Setup -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b border-slate-700 pb-2">PREPARAZIONE</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-blue-400 mb-3 uppercase">Tabellone</h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• 4 Tessere <strong>Zona Disastrata</strong> casuali.</li>
+                        <li>• Barili Rifiuto su ogni esagono (esclusi bianchi).</li>
+                        <li>• <strong>2-3 Giocatori:</strong> 3 Speciali, 19 Base.</li>
+                        <li>• <strong>4 Giocatori:</strong> 6 Speciali, 16 Base.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-blue-400 mb-3 uppercase">Giocatori</h3>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>• 15 Strutture per tipo e 6 Lavoratori.</li>
+                        <li>• 2 Carte Zona segrete a testa.</li>
+                        <li>• Risorse iniziali secondo l'ordine di turno.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Come si Gioca -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b border-slate-700 pb-2">FASE DI GIOCO</h2>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-slate-800/30 rounded-lg">
+                    <h4 class="text-green-400 font-bold mb-2 uppercase">1. Fase Preparazione (Azioni)</h4>
+                    <p class="text-sm text-slate-400 mb-3">Gioca una carta Zona per eseguire:</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+                        <div class="bg-slate-700 p-2 rounded"><strong>RACCOLTA:</strong> 1 Lavoratore</div>
+                        <div class="bg-slate-700 p-2 rounded"><strong>FONDAMENTA:</strong> 2 Lavoratori</div>
+                        <div class="bg-slate-700 p-2 rounded"><strong>COSTRUZIONE:</strong> 3 Lavoratori</div>
+                        <div class="bg-slate-700 p-2 rounded"><strong>VOLONTARIATO:</strong> Zona Lavoro</div>
+                        <div class="bg-slate-700 p-2 rounded"><strong>METEO:</strong> Stazione Meteo</div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-slate-800/30 rounded-lg">
+                    <h4 class="text-blue-400 font-bold mb-2 uppercase">2. Fase Risoluzione</h4>
+                    <p class="text-sm text-slate-400">Le azioni si risolvono nell'ordine gerarchico del manuale, garantendo che bonifiche e costruzioni seguano una sequenza logica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strutture -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b border-slate-700 pb-2">STRUTTURE E RENDIMENTO</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="text-slate-500 uppercase text-xs border-b border-slate-800">
+                            <th class="py-3 px-2">Impianto</th>
+                            <th class="py-3 px-2">Costo (Comp / Speciale)</th>
+                            <th class="py-3 px-2">Terreno</th>
+                            <th class="py-3 px-2">Bonus Meteo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-slate-800/50">
+                            <td class="py-4 px-2 font-bold text-yellow-500">Pannelli Solari</td>
+                            <td class="py-4 px-2">2 C / 1 Vetro</td>
+                            <td class="py-4 px-2 italic text-slate-400">Pianura</td>
+                            <td class="py-4 px-2 text-yellow-400">Sole (2 PV)</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/50">
+                            <td class="py-4 px-2 font-bold text-cyan-500">Pale Eoliche</td>
+                            <td class="py-4 px-2">4 C / 2 Plastica</td>
+                            <td class="py-4 px-2 italic text-slate-400">Pianura/Collina</td>
+                            <td class="py-4 px-2 text-cyan-400">Vento (3 PV)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-2 font-bold text-blue-500">C. Idroelettrica</td>
+                            <td class="py-4 px-2">8 C / 4 Metallo</td>
+                            <td class="py-4 px-2 italic text-slate-400">Collina/Montagna</td>
+                            <td class="py-4 px-2 text-blue-400">Pioggia (4 PV)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+            <p>© 2024 RICICLA!!! Board Game. Tutti i diritti riservati.</p>
+            <p class="mt-2">Progetto creato per la salvaguardia del pianeta.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
